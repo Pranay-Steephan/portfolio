@@ -1,0 +1,292 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar a {
+  margin-left: 20px;
+   font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #4a4fc7;
+}
+
+.name {
+  padding: 40px 20px;
+  font-family: Monaco, Consolas, 'Lucida Console', monospace;
+  font-size: clamp(2rem, 6vw, 4.5rem); 
+  font-weight: 600;
+  color: #6a72d4;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid #6a72d4;
+  width: 0;
+  animation: typing 2s steps(20) forwards, blink 0.7s step-end infinite;
+  box-sizing: border-box;
+  line-height: 1.2;
+  max-width: 100%;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21ch;
+  }
+}
+
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 576px) {
+  .name {
+    padding: 30px 10px;
+    font-size: 45px;
+    max-width: 148%;
+    border-right: 3px solid #6a72d4;
+  }
+}
+
+
+
+.description {
+  font-size: 18px;
+  margin-top: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.terminal {
+  background-color: #252851;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 30px;
+  overflow-x: auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.terminal-header {
+    background-color: rgb(229, 224, 224);
+     height: 35px;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      gap: 8px;
+      border-radius: 10px 10px 0px 0px;
+
+}
+
+.button-red,
+.button-yellow,
+.button-green {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.button-red {
+  background-color: #ff5f56;
+}
+
+.button-yellow {
+  background-color: #ffbd2e;
+}
+
+.button-green {
+  background-color: #27c93f;
+}
+.content{
+        font-family: Monaco, Consolas, Lucida Console, monospace;;
+        padding: 30px;
+        font-size: 18px;
+}
+
+.heading {
+  font-family: Monaco, Consolas, Lucida Console, monospace;;
+   color: yellow;
+}
+
+.project {
+  font-family: Monaco, Consolas, Lucida Console, monospace;
+  color: #6a72d4;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.project-card {
+  background-color: #fffdfd;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.project-image {
+  margin-bottom: 20px;
+  width: 100%;
+    
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2a3b6b;
+  display: flex;
+    justify-content: center;
+}
+
+.details {
+      margin-bottom: 30px;
+    line-height: 27px;
+    color: rgb(82, 95, 127);
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.project-skill {
+  background-color: #6a72d4;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+      margin-left: 50px;
+}
+
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  margin-top: 5px;
+}
+
+
+footer a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+    .project-image img {
+      width: 100%;
+      
+    }
+
+.contact-container {
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  background-color: #22234e;
+  padding: 40px;
+  border-radius: 10px;
+  gap: 50px;
+  align-items: center;
+}
+
+.form-container {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #1bbc9b;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+.footer{
+  color: gray;
+}
+@media (max-width: 576px) {
+  .description {
+  width: 480px;
+  text-align: left;
+  font-size: 20px
+  ;
+  }
+}
+@media (max-width: 576px){
+  .terminal{
+    width: 510px;
+  }
+}
+@media (max-width: 576px) {
+  .project-card {
+    display: block;
+    width: 510px;
+    flex-direction: column;
+   }
+   .footer{
+    width: 510px;
+   }
+   .project-title{
+    margin-left: 0px;
+   }
+   .navbar{
+    width: 480px;
+   }
+   .image-container img {
+  max-width: 154%;
+  
+}
+.project-image1{
+  margin-left: 80px;
+}
+
+
+
+}
